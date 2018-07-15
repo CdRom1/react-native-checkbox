@@ -26,6 +26,7 @@
   "homepage": "https://github.com/sconxu/react-native-checkbox#readme",
   "dependencies": {
     "prop-types": "^15.5.10",
-    "react-native-svg": "^6.4.1"
+    "react-native-svg": "^6.4.1",
+    "react-native-svg-uri": "^1.2.3"
   }
 }
