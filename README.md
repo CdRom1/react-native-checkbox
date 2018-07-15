@@ -1,12 +1,13 @@
-# react-native-checkbox
-Checkbox component for React native
+# react-native-checkbox-svg
+Checkbox component supporting SVG graphics for React native.
+Fork of [sconxu/react-native-checkbox](https://github.com/sconxu/react-native-checkbox)
 
 ## Installation:
 
 Install the component through npm using:
 
 ```
-npm install react-native-checkbox --save
+npm install react-native-checkbox-svg --save
 ```
 
 
