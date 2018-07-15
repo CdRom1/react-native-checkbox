@@ -1,6 +1,7 @@
 # react-native-checkbox-svg
 Checkbox component supporting SVG graphics for React native.
 Fork of [sconxu/react-native-checkbox](https://github.com/sconxu/react-native-checkbox)
+SVG rendering based on [react-native-community/react-native-svg](https://github.com/react-native-community/react-native-svg)
 
 ## Installation:
 
