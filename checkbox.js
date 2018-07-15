@@ -10,8 +10,12 @@ import {
     TouchableHighlight
 } from 'react-native';
 
-const CB_ENABLED_IMAGE = require('./cb_enabled.png');
-const CB_DISABLED_IMAGE = require('./cb_disabled.png');
+
+
+import SvgUri from 'react-native-svg-uri';
+
+const CB_ENABLED_IMAGE = require('./cb_enabled.svg');
+const CB_DISABLED_IMAGE = require('./cb_disabled.svg');
 
 class CheckBox extends Component {
     constructor(props) {
@@ -48,8 +52,7 @@ class CheckBox extends Component {
     render() {
         let container = (
             <View style={this.props.containerStyle || styles.container}>
-                <Image
-                style={this.props.checkboxStyle || styles.checkbox}
+                <SvgUri
                 source={source}/>
                 <View style={styles.labelContainer}>
                     <Text style={[styles.label, this.props.labelStyle]}>{this.props.label}</Text>
@@ -77,23 +80,16 @@ class CheckBox extends Component {
                           <Text numberOfLines={this.props.labelLines} style={[styles.label, this.props.labelStyle]}>{this.props.label}</Text>
                       </View>
                     ) : <View></View>) }
-                    <Image
-                    style={[styles.checkbox, this.props.checkboxStyle]}
-                    source={source}
-                    accessible={this.props.accessible}
-                    accessibilityLabel={this.props.accessibilityLabel + 'Checkbox'}
-                    testID={this.props.testID + 'Checkbox'}/>
+                    <SvgUri
+                    source={source} />
                 </View>
             );
         } else {
             container = (
                 <View style={[styles.container, this.props.containerStyle]}>
-                    <Image
-                    style={[styles.checkbox, this.props.checkboxStyle]}
+                    <SvgUri
                     source={source}
-                    accessible={this.props.accessible}
-                    accessibilityLabel={this.props.accessibilityLabel + 'Checkbox'}
-                    testID={this.props.testID + 'Checkbox'}/>
+                    />
                     { (this.props.label ? (
                     <View style={styles.labelContainer}
                       accessible={this.props.accessible}
