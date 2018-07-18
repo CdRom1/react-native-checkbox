@@ -65,7 +65,7 @@ const DESSIN_DISABLED = <Svg
 </Svg>
 
 
-export class CheckBox extends Component {
+class CheckBox extends Component {
     constructor(props) {
         super(props);
 
@@ -198,4 +198,4 @@ CheckBox.defaultProps = {
     underlayColor: 'transparent'
 };
 
-{/*** module.exports = CheckBox; ***/}
+module.exports = CheckBox;
