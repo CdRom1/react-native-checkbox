@@ -1,14 +1,14 @@
 {
-  "name": "react-native-checkbox",
-  "version": "1.0.5",
-  "description": "Checkbox component for React native",
+  "name": "react-native-checkbox-svg",
+  "version": "2.1.0",
+  "description": "Checkbox component for React native supporting SVG graphics",
   "main": "checkbox.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sconxu/react-native-checkbox.git"
+    "url": "git+https://github.com/CdRomain/react-native-checkbox-svg.git"
   },
   "keywords": [
     "react-native",
@@ -16,12 +16,17 @@
     "component",
     "react-component",
     "react-native",
-    "ios"
+    "ios",
+    "svg"
   ],
-  "author": "Bogdan Carmanus <carmanusbogdan@gmail.com>",
+  "author": "Romain <romain.npm@orange.fr>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sconxu/react-native-checkbox/issues"
+    "url": "https://github.com/CdRomain/react-native-checkbox-svg/issues"
   },
-  "homepage": "https://github.com/sconxu/react-native-checkbox#readme"
+  "homepage": "https://github.com/CdRomain/react-native-checkbox-svg#readme",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react-native-svg": "^6.4.1"
+  }
 }

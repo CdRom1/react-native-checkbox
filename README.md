@@ -1,19 +1,21 @@
-# react-native-checkbox
-Checkbox component for React native
+# react-native-checkbox-svg
+Checkbox component supporting SVG graphics for React native.
+Fork of [sconxu/react-native-checkbox](https://github.com/sconxu/react-native-checkbox)
+SVG rendering based on [react-native-community/react-native-svg](https://github.com/react-native-community/react-native-svg)
 
-##Installation:
+## Installation:
 
-First you need to add `cb_disabled.png` and `cb_enabled.png` images from the repository as image assets inside your XCode project. Here is the link on how to do that https://facebook.github.io/react-native/docs/image.html#adding-static-resources-to-your-ios-app-using-images-xcassets
+Install the component through npm using:
 
-Then you can install the component through npm using:
-
-```js
-npm install react-native-checkbox --save
+```
+npm install react-native-checkbox-svg --save
 ```
 
 
-##Example:
+## Example:
 ```js
+import CheckBox from 'react-native-checkbox';
+
 <CheckBox
   label='Label'
   checked={true}
@@ -21,7 +23,7 @@ npm install react-native-checkbox --save
 />
 ```
 
-##Props:
+## Props:
 
 
 - `label` : text that will be displayed along the checkbox
@@ -29,4 +31,14 @@ npm install react-native-checkbox --save
 value is false
 - `labelStyle` : style object that will be applied to the label
 - `checked` : initial checked value
+- `checkedImage`: checked image (e.g.: require('PATH_TO_IMAGE'))
+- `checkboxStyle` : style object that will be applied to the
+  checkbox
+- `uncheckedImage`: unchecked image (e.g.: require('PATH_TO_IMAGE'))
 - `onChange` : callback function that will be invoked with the toggled checked property as argument.
+- `containerStyle` : style object that will be applied to the
+  container
+- `underlayColor` : style the touchable component underlay color
+- `accessible` : indicates whether view is an accessible element
+- `accessibilityLabel` : maps to content description / label for Android automation
+- `testID` : maps to id / name for iOS automation
