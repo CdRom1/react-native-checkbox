@@ -36,10 +36,10 @@ import CheckBox from 'react-native-checkbox-svg';
 value is false
 - `labelStyle` : style object that will be applied to the label
 - `checked` : initial checked value
-- `checkedImage`: checked image (e.g.: require('PATH_TO_IMAGE'))
+- `checkedSvg`: checked image (e.g.: <Svg height="100" width="100"><Circle cx="50" cy="50" r="45" stroke="blue" strokeWidth="2.5" fill="green" /></Svg>)
 - `checkboxStyle` : style object that will be applied to the
   checkbox
-- `uncheckedImage`: unchecked image (e.g.: require('PATH_TO_IMAGE'))
+- `uncheckedSvg`: unchecked image
 - `onChange` : callback function that will be invoked with the toggled checked property as argument.
 - `containerStyle` : style object that will be applied to the
   container
